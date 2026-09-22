@@ -9,7 +9,6 @@ const PORT_WS   = 8081;   // Puerto para WebSocket
 
 // Servidor HTTP: entrega index.html, p5-client.js, estilos.css
 app.use(express.static(path.join(__dirname, '..')));
-// Ajustá '../public' según dónde tengas tus archivos
 app.listen(PORT_HTTP, () => {
   console.log(`Servidor web en http://192.168.0.243:${PORT_HTTP}`);
 });
