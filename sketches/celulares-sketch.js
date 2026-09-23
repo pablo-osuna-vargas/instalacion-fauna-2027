@@ -6,7 +6,9 @@ function setup() {
   background(0);
 
   // Conectar al servidor WebSocket en la PC
-  socket = new WebSocket("ws://192.168.0.243:8081");
+  socket = new WebSocket("ws://192.168.1.34:8081");
+  // "ws://192.168.0.243:8081" ---> juan b justo
+  // "ws://192.168.1.34:8081" ---> aristobulo
 
   // Crear sliders sin etiquetas
   sliderR = createSlider(0, 255, 100);

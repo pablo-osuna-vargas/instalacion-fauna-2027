@@ -1,7 +1,9 @@
 const QRCode = require('qrcode');
 
 // URL de tu servidor HTTP
-const url = 'http://192.168.0.243:8080/';
+const url = 'http://192.168.1.34:8080/';
+  // "http://192.168.0.243:8080" ---> juan b justo
+  // "http://192.168.1.34:8080" ---> aristobulo
 
 // Generar archivo PNG
 QRCode.toFile('instalacion-qr.png', url, {

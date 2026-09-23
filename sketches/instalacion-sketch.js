@@ -18,7 +18,9 @@ function setup() {
   oscB.amp(0); oscB.freq(592);
 
   // Conexión al servidor expuesto por PC
-  socket = new WebSocket("ws://192.168.0.243:8081");
+  socket = new WebSocket("ws://192.168.1.34:8081");
+    // "ws://192.168.0.243:8081" ---> juan b justo
+    // "ws://192.168.1.34:8081" ---> aristobulo
 
   // Callback cuando llegan datos
   socket.onmessage = (event) => {
